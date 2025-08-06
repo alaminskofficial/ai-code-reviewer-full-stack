@@ -7,7 +7,6 @@ Code Reviewer Full Stack is a web application designed to facilitate code review
 - Submit code snippets for review.
 - Add comments and suggestions inline.
 - Track review progress and approvals.
-- User authentication and role-based access.
 
 ## Technologies Used
 - **Frontend**: React, Tailwind CSS
