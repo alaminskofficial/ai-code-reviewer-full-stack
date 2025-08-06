@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+main .left {
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #121212;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1rem;
+  font-family: 'Fira Code', monospace;
+  color: #d4d4d4;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4a90e2;
+  color: #ffffff;
+  padding: 0.6rem 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .left .review:hover {
+  background-color: #357abd;
+  box-shadow: 0 4px 12px rgba(53, 122, 189, 0.8);
+}
+
+main .right {
+  background-color: #2c2c2c;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  overflow-y: auto;
+  border-radius: 0.7rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+  word-wrap: break-word;
+  max-width: 100%; 
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: auto;
+    height: 50vh;
+    margin-bottom: 1rem;
+  }
+
+  main .left .review {
+    position: static;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+}
