@@ -33,7 +33,7 @@ Code Reviewer Full Stack is a web application designed to facilitate code review
     - Add the following variables:
       ```
 
-      JWT_SECRET=your_jwt_secret
+      YOUR_SECRET=your_all_secret_key
       ```
 
 4. Start the development servers:
